@@ -6,253 +6,331 @@
     android:id="@+id/constraint"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <LinearLayout
-        android:id="@+id/linearLayout0"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/label0"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rightOptionGroup">
+        app:layout_constraintTop_toBottomOf="@id/outputView">
+
 
         <TextView
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/M" />
+            android:text="@string/M"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintLeft_toLeftOf="@id/label0"
+            app:layout_constraintRight_toLeftOf="@id/textView20" />
 
         <TextView
             android:id="@+id/textView20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/I" />
+            android:text="@string/I"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintLeft_toRightOf="@id/textView10"
+            app:layout_constraintRight_toLeftOf="@id/textView30"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView30"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/N" />
+            android:text="@string/N"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintLeft_toRightOf="@id/textView20"
+            app:layout_constraintRight_toLeftOf="@id/textView40"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView40"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/N" />
+            android:text="@string/N"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintLeft_toRightOf="@id/textView30"
+            app:layout_constraintRight_toLeftOf="@id/textView50"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView50"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/U" />
+            android:layout_height="wrap_content"
+            android:text="@string/U"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintLeft_toRightOf="@id/textView40"
+            app:layout_constraintRight_toLeftOf="@id/textView60"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView60"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/L" />
+            android:text="@string/L"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintLeft_toRightOf="@id/textView50"
+            app:layout_constraintRight_toLeftOf="@id/textView70"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView70"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/L" />
+            android:text="@string/L"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintLeft_toRightOf="@id/textView60"
+            app:layout_constraintRight_toLeftOf="@id/textView80"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView80"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/I" />
+            android:text="@string/I"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintLeft_toRightOf="@id/textView70"
+            app:layout_constraintRight_toLeftOf="@id/textView90"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView90"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_height="19dp"
             android:text="@string/N"
-            android:layout_gravity="center" />
-    </LinearLayout>
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintLeft_toRightOf="@id/textView80"
+            app:layout_constraintRight_toRightOf="@id/label0"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <LinearLayout
-        android:id="@+id/linearLayout1"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/label1"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="@+id/root"
-        app:layout_constraintEnd_toStartOf="@+id/root"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/root">
+        app:layout_constraintTop_toBottomOf="@id/label0"
+        app:layout_constraintLeft_toRightOf="@id/root"
+        app:layout_constraintRight_toLeftOf="@id/rightOptionGroup"
+        app:layout_constraintBottom_toTopOf="@id/label3">
 
         <TextView
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/M" />
+            android:text="@string/M"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintBottom_toTopOf="@id/textView21"
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
 
         <TextView
             android:id="@+id/textView21"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/I" />
+            android:text="@string/I"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintTop_toBottomOf="@id/textView11"
+            app:layout_constraintBottom_toTopOf="@id/textView31"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
 
         <TextView
             android:id="@+id/textView31"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/N" />
+            android:text="@string/N"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintTop_toBottomOf="@id/textView21"
+            app:layout_constraintBottom_toTopOf="@id/textView41"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
 
         <TextView
             android:id="@+id/textView41"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/N" />
+            android:text="@string/N"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintTop_toBottomOf="@id/textView31"
+            app:layout_constraintBottom_toTopOf="@id/textView51"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
 
         <TextView
             android:id="@+id/textView51"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/U" />
+            android:text="@string/U"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintTop_toBottomOf="@id/textView41"
+            app:layout_constraintBottom_toTopOf="@id/textView61"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
 
         <TextView
             android:id="@+id/textView61"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/L" />
+            android:text="@string/L"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintTop_toBottomOf="@id/textView51"
+            app:layout_constraintBottom_toTopOf="@id/textView71"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
 
         <TextView
             android:id="@+id/textView71"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/L" />
+            android:text="@string/L"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintTop_toBottomOf="@id/textView61"
+            app:layout_constraintBottom_toTopOf="@id/textView81"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
 
         <TextView
             android:id="@+id/textView81"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/I" />
+            android:text="@string/I"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintTop_toBottomOf="@id/textView71"
+            app:layout_constraintBottom_toTopOf="@id/textView91"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
 
         <TextView
             android:id="@+id/textView91"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/N" />
-    </LinearLayout>
+            android:layout_height="19dp"
+            android:text="@string/N"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintTop_toBottomOf="@id/textView81"
+            app:layout_constraintBottom_toBottomOf="@id/label1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="@+id/rightOptionGroup"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/label2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/label3"
+        app:layout_constraintRight_toLeftOf="@id/root"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/outputView"
-        app:layout_constraintBottom_toTopOf="@id/root">
+        app:layout_constraintTop_toBottomOf="@id/label0">
 
         <TextView
             android:id="@+id/textView12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/M" />
+            android:text="@string/M"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintBottom_toTopOf="@id/textView22"
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
 
         <TextView
             android:id="@+id/textView22"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/I" />
+            android:text="@string/I"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintTop_toBottomOf="@id/textView12"
+            app:layout_constraintBottom_toTopOf="@id/textView32"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
 
         <TextView
             android:id="@+id/textView32"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/N" />
+            android:text="@string/N"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintTop_toBottomOf="@id/textView22"
+            app:layout_constraintBottom_toTopOf="@id/textView42"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
 
         <TextView
             android:id="@+id/textView42"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/N" />
+            android:text="@string/N"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintTop_toBottomOf="@id/textView32"
+            app:layout_constraintBottom_toTopOf="@id/textView52"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
 
         <TextView
             android:id="@+id/textView52"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/U" />
+            android:text="@string/U"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintTop_toBottomOf="@id/textView42"
+            app:layout_constraintBottom_toTopOf="@id/textView62"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
 
         <TextView
             android:id="@+id/textView62"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/L" />
+            android:text="@string/L"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintTop_toBottomOf="@id/textView52"
+            app:layout_constraintBottom_toTopOf="@id/textView72"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
 
         <TextView
             android:id="@+id/textView72"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/L" />
+            android:text="@string/L"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintTop_toBottomOf="@id/textView62"
+            app:layout_constraintBottom_toTopOf="@id/textView82"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
 
         <TextView
             android:id="@+id/textView82"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/I" />
+            android:text="@string/I"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintTop_toBottomOf="@id/textView72"
+            app:layout_constraintBottom_toTopOf="@id/textView92"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
 
         <TextView
             android:id="@+id/textView92"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/N" />
-    </LinearLayout>
+            android:layout_height="19dp"
+            android:text="@string/N"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintTop_toBottomOf="@id/textView82"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
         android:id="@+id/outputView"
@@ -322,10 +400,10 @@
         android:id="@+id/root"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintLeft_toRightOf="@id/linearLayout1"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        app:layout_constraintRight_toLeftOf="@id/linearLayout3"
-        app:layout_constraintBottom_toTopOf="@id/linearLayout0"
+        app:layout_constraintLeft_toRightOf="@id/label2"
+        app:layout_constraintTop_toBottomOf="@+id/label3"
+        app:layout_constraintRight_toLeftOf="@id/label1"
+        app:layout_constraintBottom_toTopOf="@id/label0"
         tools:layout_editor_absoluteX="64dp">
 
         <Button
@@ -522,87 +600,109 @@
 
     </RelativeLayout>
 
-    <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="@+id/root"
-        app:layout_constraintEnd_toStartOf="@+id/rightOptionGroup"
-        app:layout_constraintStart_toEndOf="@+id/root"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/label3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rightOptionGroup">
 
         <TextView
             android:id="@+id/textView13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/M" />
+            android:text="@string/M"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintLeft_toLeftOf="@id/label3"
+            app:layout_constraintRight_toLeftOf="@id/textView23" />
 
         <TextView
             android:id="@+id/textView23"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/I" />
+            android:text="@string/I"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintLeft_toRightOf="@id/textView13"
+            app:layout_constraintRight_toLeftOf="@id/textView33"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView33"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/N" />
+            android:text="@string/N"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintLeft_toRightOf="@id/textView23"
+            app:layout_constraintRight_toLeftOf="@id/textView43"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView43"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/N" />
+            android:text="@string/N"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintLeft_toRightOf="@id/textView33"
+            app:layout_constraintRight_toLeftOf="@id/textView53"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView53"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/U" />
+            android:text="@string/U"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintLeft_toRightOf="@id/textView43"
+            app:layout_constraintRight_toLeftOf="@id/textView63"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView63"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/L" />
+            android:text="@string/L"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintLeft_toRightOf="@id/textView53"
+            app:layout_constraintRight_toLeftOf="@id/textView73"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView73"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/L" />
+            android:text="@string/L"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintLeft_toRightOf="@id/textView63"
+            app:layout_constraintRight_toLeftOf="@id/textView83"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView83"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/I" />
+            android:text="@string/I"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintLeft_toRightOf="@id/textView73"
+            app:layout_constraintRight_toLeftOf="@id/textView93"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView93"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/N" />
-    </LinearLayout>
+            android:layout_height="19dp"
+            android:text="@string/N"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintLeft_toRightOf="@id/textView83"
+            app:layout_constraintRight_toRightOf="@id/label3"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
